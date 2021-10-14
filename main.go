@@ -1,4 +1,4 @@
-package gossl-self-signed
+package goSelfSigned
 
 import (
 	"crypto/ecdsa"
