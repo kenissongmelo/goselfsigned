@@ -100,11 +100,11 @@ func main() {
 	template := x509.Certificate{
 		SerialNumber: serialNumber,
 		Subject: pkix.Name{
-			Organization:  []string{"Banco Inter"},
+			Organization:  []string{"Teste Empresa"},
 			Country:       []string{"BR"},
 			Province:      []string{""},
 			Locality:      []string{"Belo Horizonte"},
-			StreetAddress: []string{"Barbacena 1219"},
+			StreetAddress: []string{"Barbacena"},
 			PostalCode:    []string{"30000000"},
 		},
 		NotBefore: notBefore,
