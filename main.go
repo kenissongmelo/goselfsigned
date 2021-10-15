@@ -1,4 +1,4 @@
-package goselfsigned
+package main
 
 import (
 	"crypto/ecdsa"
@@ -100,11 +100,11 @@ func main() {
 	template := x509.Certificate{
 		SerialNumber: serialNumber,
 		Subject: pkix.Name{
-			Organization:  []string{"Teste Empresa"},
+			Organization:  []string{"Banco Inter"},
 			Country:       []string{"BR"},
 			Province:      []string{""},
 			Locality:      []string{"Belo Horizonte"},
-			StreetAddress: []string{"Barbacena"},
+			StreetAddress: []string{"Barbacena 1219"},
 			PostalCode:    []string{"30000000"},
 		},
 		NotBefore: notBefore,
@@ -163,3 +163,4 @@ func main() {
 	}
 	log.Print("wrote key.pem\n")
 }
+
